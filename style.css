@@ -2,41 +2,361 @@
     padding: 0;
     margin: 0;
     overflow: hidden;
-}
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    display: absolute;
-    height: 100%;
-    width: 100%;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        display: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: black;
 
-}
+    }
 
-.sidebar {
-    display: absolute;
-    height: 30rem;
-    width: 25rem;
-    color: white;
-    background-color: rgb(204, 91, 91);
-    overflow: hidden;
-}
+    .sidebar {
+        display: absolute;
+        height: 600px;
+        width: 300px;
+        color: white;
+        /* background-color: rgb(103, 95, 95); */
+        overflow: hidden;
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+    }
 
-.main {
-    display: absolute;
-    height: 30rem;
-    width: 52.6rem;
-    color: white;
-    background-color: gray;
- 
-}
+    .main {
 
-.player {
-    display: flex;
-    width: 100rem;
-    height: 5rem;
-    background-color: black;
-    color: white;
-    overflow: hidden;
-    position-y: fixed;
-}
+        height: 550px;
+        width: 75%;
+        color: white;
+        background-color: rgb(29, 26, 26);
+        margin: 10px 5px;
+        overflow-y: scroll;
+        border-radius: 0.5rem;
+
+    }
+
+    .player {
+
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        color: white;
+        position: sticky;
+        bottom: 50px;
+
+    }
+
+    .nav {
+        background-color: rgb(23, 22, 22);
+        height: 100px;
+        width: 400px;
+    }
+
+    .nav a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+
+    }
+
+    .navbtn1 {
+        font-size: 20px;
+        display: flex;
+        margin: 15px 15px 15px;
+        padding: 0px;
+
+    }
+
+    .op {
+        opacity: 0.7;
+    }
+
+    a {
+        padding-left: 15px;
+    }
+
+
+
+    .libhead {
+        background-color: rgb(19, 18, 18);
+        margin-top: 10px;
+        height: 50px;
+        border-radius: 0.5rem;
+
+    }
+
+
+
+    img {
+        height: 25px;
+        margin-left: 25px;
+        margin-top: 10px;
+
+    }
+
+    .libhead a {
+        height: 50px;
+        color: white;
+        text-decoration: none;
+
+
+    }
+
+    span {
+        margin-left: 60px;
+
+
+    }
+
+    .icon {
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+
+    .libmain {
+        padding: 15px;
+        margin-top: 10px;
+        height: 100px;
+        background-color: rgb(39, 37, 37);
+        font-size: 8px;
+        border-radius: 10px;
+
+
+    }
+
+    .libmain2 {
+        padding: 15px;
+        margin-top: 10px;
+        height: 120px;
+        background-color: rgb(39, 37, 37);
+        font-size: 8px;
+        border-radius: 10px;
+
+
+    }
+
+    .libmain h2,
+    p {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .libmain button {
+        border-radius: 17px;
+        padding: 5px;
+
+
+    }
+
+    .libhead h2 {
+
+        padding: 25px;
+        font-size: 15px;
+    }
+
+    .head {
+        display: flex;
+        padding: 10px;
+        height: 30px;
+        width: 72%;
+
+    }
+
+    #icon {
+        padding-top: 12px;
+        padding-left: 25px;
+    }
+
+    .righthead {
+        padding-left: 650px;
+    }
+
+    .righthead button {
+
+        padding: 5px;
+        border-radius: 16px;
+        background-color: black;
+        color: white;
+
+    }
+
+    .headb button {
+        margin: 10px;
+        border-radius: 14px;
+        padding: 5px;
+        z-index: 2;
+        background-color: red;
+
+    }
+
+    #mainhead {
+        margin: 15px;
+    }
+
+    .cards {
+        margin-left: 17px;
+
+        height: 250px;
+        width: 200px;
+        /* background-color: rgb(151, 127, 127); */
+    }
+
+    .cards img {
+        border-radius: 10px;
+        margin-left: 15px;
+        height: 170px;
+
+    }
+
+    .cardsh {
+        padding-left: 15px;
+        padding-top: 10px;
+
+    }
+
+    .cardsp {
+        opacity: 0.7;
+        font-size: 15px;
+        padding-left: 15px;
+        padding-top: 10px;
+
+    }
+
+    .card {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #newbtn {
+        color: black;
+        background-color: white;
+    }
+
+    .down {
+        margin-right: 5px;
+    }
+
+    .cards:hover {
+        background-color: rgb(90, 90, 90);
+        transition: 2s;
+        border-radius: 10px;
+    }
+
+    .center {
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        height: 5rem;
+    }
+
+    .plaicon {
+        align-items: center;
+        text-align: center;
+        width: 35rem;
+        margin-left: 0;
+
+    }
+
+    .progresbar {
+        margin-top: 0.7rem;
+        width: 35rem;
+        margin-left: 1.1rem;
+    }
+
+    .progresbar2 {
+        width: 20rem;
+    }
+
+    .timestamp2 {
+        margin-left: 0;
+    }
+
+    .leftplayer {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 27%;
+    }
+
+    .rightplayer {
+        height: 100%;
+        width: 25%;
+    }
+
+    .player {
+        display: flex;
+        align-items: flex-start;
+
+    }
+
+    .player_icon {
+        opacity: 0.7;
+    }
+
+    .player_icon:hover {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    .leftplayer img {
+        margin-left: 10px;
+        height: 3.5rem;
+
+
+    }
+
+    .leftplayer h3 {
+        height: 4rem;
+        overflow: hidden;
+        font-size: 0.8rem;
+        width: 255px;
+        margin-top: 1.4rem;
+        margin-left: 17px;
+
+    }
+
+    .righticon {
+
+        display: inline-block;
+        font-size: 1.1rem;
+        height: 2.2rem;
+        width: 5.5rem;
+        margin-top: 1.5rem;
+        text-align: start;
+        align-items: center;
+    }
+
+    .rangbar {
+        background-color: rebeccapurple;
+        height: 50px;
+        margin-bottom: 4px;
+        align-items: center;
+        text-align: center;
+        width: 10rem;
+    }
+
+    .righticon2 {
+        padding-top: 23px;
+        font-size: 1.1rem;
+        height: 2.2rem;
+        width: rem;
+        display: inline-block;
+    }
+
+    .righthead {
+        margin-top: 1px;
+        position: fixed;
+        /* background-color: black; */
+        height: 2.7rem;
+        width: 347px;
+    }
+
+    .head {
+        position: fixed;
+        background-color: rgb(24, 24, 24);
+
+    }
